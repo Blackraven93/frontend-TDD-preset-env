@@ -1,0 +1,41 @@
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: teal;
+}
+
+.value {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+button {
+    border: none;
+    width: 100px;
+    height: 50px;
+    font-size: large;
+    border-radius: 100px;
+    color: teal;
+    font-weight: 600;
+    box-shadow: 1px 4px 0 rgb(0,0,0,0.5);
+}
+
+button:active {
+    box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+    position: relative;
+    top:2px;
+}
+
+button:hover {
+    background-color: teal;
+    color:white;
+}
