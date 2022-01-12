@@ -9,7 +9,7 @@ describe("ui-counter", () => {
     cy.get(".plus").click();
 
     // value 클래스를 가진 요소의 텍스트가 10
-    cy.get(".value").should("be.visible", "1");
+    cy.get(".value").should("have.text", "1");
   });
 
   it("- 버튼 클릭시 1 감소한다.", () => {
@@ -17,6 +17,6 @@ describe("ui-counter", () => {
     cy.get(".minus").click();
 
     // value 클래스를 가진 요소의 텍스트가 10
-    cy.get(".value").should("be.visible", "0");
+    cy.get(".value").should("have.text", "-1");
   });
 });
